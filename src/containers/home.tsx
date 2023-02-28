@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Stack } from "@mui/material";
 
 const Home = () => {
 
@@ -7,12 +7,12 @@ const Home = () => {
   const telephone = "972-469-9652"
   
   return (
-    <Box>
+    <Stack sx={{alignItems: "center"}}>
 
       <h1>DFW Contracting</h1>
       <p><a href={`mailto:${email}`}>{email}</a></p>
       <p><a href={`tel:${telephone}`}>{telephone}</a></p>
-    </Box>
+    </Stack>
       
   );
 };
